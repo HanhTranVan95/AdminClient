@@ -5,6 +5,8 @@ on:
     branches:
       - main  # chạy khi push vào main
   workflow_dispatch:  # cho phép chạy thủ công
+  permissions:
+    contents: write
 
 jobs:
   build-and-deploy:
